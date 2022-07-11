@@ -1,0 +1,58 @@
+version: '3'
+
+services:
+  app1:
+    build:
+      context: ./app1
+    volumes:
+      - ./app1:/home/node/app
+    container_name: app1
+    hostname: app1
+    ports:
+      - "8888:8888"
+  app2:
+    build:
+      context: ./app2
+    volumes:
+      - ./app2:/home/node/app
+    container_name: app2
+    hostname: app2
+    ports:
+      - "5000:5000"
+  app3:
+    build:
+      context: ./app3
+    volumes:
+      - ./app3:/home/node/app
+    container_name: app3
+    hostname: app3
+    ports:
+      - "8181:8181"
+    depends_on:
+      - mongodb
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=password
+  mongo-express:
+    container_name: mongo-express
+    image: mongo-express
+    ports:
+      - "8081:8081"
+    environment:
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=password
+      - ME_CONFIG_MONGODB_SERVER=mongo
+  nginx:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: nginx_c
+    ports:
+      - "80:80"
+      - "443:443"
+      - "81:81"

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cards</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<style>
+    *{
+    box-sizing: border-box;
+}
+
+main{
+    
+   border: solid red 1px;
+    height: 1080px ;
+    min-height: 1920px;
+    max-height: 1080px;
+
+    width: 1920px;
+    max-width: 1920px;
+    min-width:1920px;
+
+    position: relative;
+
+}
+
+main>section:nth-child(1n)
+{
+  background: rgb(255,210,148);
+     background: linear-gradient(59deg, rgba(255,210,148,1) 8%, rgba(255,128,115,1) 49%, rgba(255,170,208,1) 96%);
+}
+
+main>section:nth-child(2n)
+{
+  background: #83a4d4; 
+  background: -webkit-linear-gradient(to right, #83a4d4, #b6fbff);
+  background: linear-gradient(to right, #83a4d4, #b6fbff); 
+}
+main>section:nth-child(3n)
+{
+    background: #B3FFAB;  
+    background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB); 
+    background: linear-gradient(to right, #12FFF7, #B3FFAB); 
+     
+}
+
+main>section
+{
+    width: 15%;
+    height: 10%;
+
+    margin: 20px;
+
+    display: inline-block;
+    border-radius: 2%;
+
+     background: rgb(255,210,148);
+     background: linear-gradient(59deg, rgba(255,210,148,1) 8%, rgba(255,128,115,1) 49%, rgba(255,170,208,1) 96%);
+     font-size: 0px;
+}
+
+
+div
+{
+    display:  inline-block;
+    vertical-align: top;
+    
+
+    margin: 0px;
+    width: 50%;
+    height: 100%;
+    font-size: 0;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    padding-top:5%;
+    
+}
+
+
+
+section>div+div>p:first-child
+{
+    
+    position: absolute;
+    right: -50px;
+    top: -26px;
+}
+
+
+section>div+div>p+p
+{
+    
+    position: absolute;
+    right: -20px;
+    bottom: -60px;
+    margin:0px;
+    padding: 0px;
+}
+section>div>p:first-child{
+    margin-top:20px;
+    font-size: small;
+}
+section>div>p:nth-child(2){
+    margin-top:20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+section>div>p+p+p{
+    margin-top:60px;
+    font-size: small;
+    font-weight: bold;
+    margin-left:20%;
+}
+
+
+section>div+div>p
+{
+    width: 90%;
+    height: 75%;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.3;
+}
+
+section>div+div>p>svg
+{
+    margin-top: 50px;
+    margin-right: 50%;
+    fill: black;
+    opacity: 1;
+}
+
+</style>
+  <body>
+    <main>
+      <section>
+        <div>
+          <p>Weekle Sales</p>
+          <p>$ 15,0000</p>
+          <p>Increases by 65%</p>
+        </div>
+        <div>
+          <p>
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path
+                d="M4 19V20H22V22H2V2H4V17C7 17 10 15 12.1 11.4C15.1 6.4 18.4 4 22 4V6C19.2 6 16.5 8.1 13.9 12.5C11.3 16.6 7.7 19 4 19Z"
+              />
+            </svg>
+          </p>
+          <p></p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <p>Weekle Orders</p>
+          <p>$ 456334</p>
+          <p>Decreases by 10%</p>
+        </div>
+        <div>
+          <p>
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path
+                fill="Black"
+                d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+              />
+            </svg>
+          </p>
+          <p></p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <p>Visitor Online</p>
+          <p>$ 95,0000</p>
+          <p>Increases by 5%</p>
+        </div>
+        <div>
+          <p>
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path
+                fill="Black"
+                d="M18,2H6L2,8L12,22L22,8L18,2M4.43,8L7.07,4H16.93L19.57,8L12,18.56L4.43,8Z"
+              />
+            </svg>
+          </p>
+          <p></p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <p>Weekle Sales</p>
+          <p>$ 15,0000</p>
+          <p>Increases by 65%</p>
+        </div>
+        <div>
+          <p>
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path
+                d="M4 19V20H22V22H2V2H4V17C7 17 10 15 12.1 11.4C15.1 6.4 18.4 4 22 4V6C19.2 6 16.5 8.1 13.9 12.5C11.3 16.6 7.7 19 4 19Z"
+              />
+            </svg>
+          </p>
+          <p></p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <p>Weekle Orders</p>
+          <p>$ 456334</p>
+          <p>Decreases by 10%</p>
+        </div>
+        <div>
+          <p>
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path
+                fill="Black"
+                d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+              />
+            </svg>
+          </p>
+          <p></p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <p>Visitor Online</p>
+          <p>$ 95,0000</p>
+          <p>Increases by 5%</p>
+        </div>
+        <div>
+          <p>
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path
+                fill="Black"
+                d="M18,2H6L2,8L12,22L22,8L18,2M4.43,8L7.07,4H16.93L19.57,8L12,18.56L4.43,8Z"
+              />
+            </svg>
+          </p>
+          <p></p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <p>Weekle Sales</p>
+          <p>$ 15,0000</p>
+          <p>Increases by 65%</p>
+        </div>
+        <div>
+          <p>
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path
+                d="M4 19V20H22V22H2V2H4V17C7 17 10 15 12.1 11.4C15.1 6.4 18.4 4 22 4V6C19.2 6 16.5 8.1 13.9 12.5C11.3 16.6 7.7 19 4 19Z"
+              />
+            </svg>
+          </p>
+          <p></p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <p>Weekle Orders</p>
+          <p>$ 456334</p>
+          <p>Decreases by 10%</p>
+        </div>
+        <div>
+          <p>
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path
+                fill="Black"
+                d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+              />
+            </svg>
+          </p>
+          <p></p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <p>Visitor Online</p>
+          <p>$ 95,0000</p>
+          <p>Increases by 5%</p>
+        </div>
+        <div>
+          <p>
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path
+                fill="Black"
+                d="M18,2H6L2,8L12,22L22,8L18,2M4.43,8L7.07,4H16.93L19.57,8L12,18.56L4.43,8Z"
+              />
+            </svg>
+          </p>
+          <p></p>
+        </div>
+      </section>
+      
+    </main>
+  </body>
+</html>
